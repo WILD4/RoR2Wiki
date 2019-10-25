@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+.header{
+    /* display: block; */
+    background-color: #ffffff;
+    border-color: #e7e7e7;
+    margin-bottom: 0;
+    transition: top 0.2s ease-in-out;
+    border: none;
+    z-index: 99;
+}
+.nav{
+
+}
+
+footer{
+    background-color: black;
+    padding:1.5em 0;
+    text-align: center;
+}
+
+.legal_links a{
+    color: #91e3f3;
+    padding: 15px;
+}
+.footer_pub_devs{
+    margin: 1em 0;
+}
+
+.bar{
+    width: 100%;
+    background-color: black;
+    padding:5px 20px;
+}
+
+.wiki-logo{
+    float: left;
+    height : auto; 
+    padding-bottom:0.2em;
+}
+
+.mainnav{
+    padding-left: 1em;
+}
+
+.mainnav li>ul{
+    position: absolute;
+    display: none;
+    text-align: left;
+    background-color: black;
+}
+
+
+.mainnav a{
+    font-weight:bolder;
+    font-size: 16px;
+    color:#91e3f3;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    /* 让a铺满li */
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    padding-top: 46px;
+    color: #91e3f3;
+}
+
+.nav>li{
+    text-align: center;
+    width: 5em;
+    position: relative;
+    float: left;
+    display: block;
+    line-height: 46px;
+    margin-left: 4em;
+}
+
+.nav>li>a{
+    border-top: 2px solid black;
+}
+
+.nav ul{
+    top:46px;
+    /* padding-top: 1em; */
+}
+
+.nav ul>li{
+    width: 14em;
+    padding: 1em 0;
+}
+
+.nav ul>li a{
+    padding-left: 1em;
+}
+
+.nav>li>a.hover{
+    background: #646466;
+    border-top-color: #91e3f3;
+}
+
+.nav ul>li.hover{
+    background: #646466;
+    color: #91e3f3;
+}
+
+.nav>li:first-child{
+    margin-left: 2em;
+}
+
+
+.character>a{
+    width: 100%;
+}
+
+.sec-bg{
+    /* background-size:100%;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background: url(../images/RoR2_Key_700.jpg);
+    background-attachment: fixed; */
+
+    background: url(../images/wiki.png) center top no-repeat fixed;
+    background-size: cover;
+}
+
+.wikiaTopAds{
+    padding: 20px 0;
+}
+
+.baike{
+    height: auto;
+    color: #D5D4D4;
+    background-color: rgb(39,39,40,80%);
+    border:1px solid rgb(85,85,85);
+    padding-bottom:100px;
+}
+
+.line{
+    border-bottom: 1px solid #D5D4D4;
+    display: block;
+    justify-content: center;
+    line-height: 2em;
+}
+
+.block-profile{
+    width: 30%;
+    float: right;
+    background-color: rgb(39,58,75);
+    padding-top: 16px;
+}
+
+.block-profile h2,figure{
+    text-align: center;
+}
+
+.block-profile .profile{
+    font-size: 10px;
+    padding: 16px 32px;
+    margin-top: 1em;
+}
+
+.block-profile .profile>div{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.block-profile .profile h3{
+    /* float: left; */
+    /* display: block; */
+    width: 35%;
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.block-profile .profile .profile-right{
+
+    width: 100%;
+}
+
+.key-features{
+    /* display: block; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.key-features div img{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.key-features div p{
+    width: 70%;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.key-features div img{
+    border: 2px solid white;
+}
+
+.sysreq_contents{
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+}
+
+.sysreq_contents ul{
+    line-height: 1.4em;
+}
+
+.sysreq_contents strong{
+    font-weight: normal;
+    font-size: 11px;
+    color: #4582A5;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.left-requirements{
+    float: left;
+    width: 40%;
+}
+.right-requirements{
+    float: left;
+    width: 40%;
+    margin-left: 4em;
+}
+
+.abilities-table tr>td>span{
+    color:rgb(232,154,31);
+}
+
+.span-blue tr>td>span{
+    color:#6CD1EA;
+}
+
+.abilities-table tr>td>b{
+    color:rgb(202,180,102);
+}
+
+.abilities-table td{
+    border-bottom: 1px solid #D5D4D4;
+    padding:6px 12px;
+}
+
+.abilities-table td>figure img{
+    width: 64px;
+}
+
+.character-block{
+    width: 60%;
+    margin-top: 4em;
+    margin-left: 1em;
+}
+
+.character-block figure,.character-block .profile{
+    width: 70%;
+    margin: 0 auto;
+}
+.character-block .profile{
+    padding: 16px 0;
+}
+.charaBlock-left,.charaBlock-right{
+    float: left;
+}
+.charaBlock-left{
+    padding-left: 1em;
+    background-color: rgb(63,81,93);
+    height: 300px;
+    padding: 0.4em 0.8em;
+    margin-left: 2em;
+}
+
+.charaBlock-center{
+    padding-left: 1em;
+    padding: 0.4em 0.8em;
+    margin-left: 2em;
+}
+
+.charaBlock-bottom{
+    font-size: 14px;
+    background-color: rgb(63,81,93);
+    /* padding-left: 1em; */
+    padding: 0.4em 0.8em;
+    margin: 0 1em;
+    margin: 1em;
+}
+
+.charaBlock-right{
+    width: 60%;
+    margin-right: -3%;
+}
+
+.charaBlock-left p{
+    font-size: 14px;
+}
+
+.original-ul ul li{
+    list-style-type: disc;
+}
+.original-ul{
+    padding-left: 2em;
+}
+
+.original-ul ul ul{
+    padding-left:2em;
+}
+
+.original-ul b{
+    color:rgb(232,154,31);
+}
+.original-ul a{
+    color:#0f91ff;
+    text-decoration: none;
+}
+.original-ul span{
+    color:#6CD1EA;
+}
+
+.item-profile b{
+
+}
+.item-list li{ 
+    list-style-type: disc;
+}
+.item-list{
+    padding-left: 2em;
+}
+
+.items-list{
+    position: relative;
+    margin-left: 3em;
+    width: 70%;
+}
+.table-list th{
+    background: #262626;
+    /* margin: 0; */
+    /* text-align: left; */
+}
+.table-list td, .table-list th{
+    padding:6px 12px;
+    border-bottom: 1px solid white;
+}
+.table-list{
+    /* display: block; */
+}
+
+.table-list figure img{
+    width: 81px;
+}
