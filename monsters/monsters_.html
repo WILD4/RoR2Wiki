@@ -20,22 +20,22 @@
                 <div class="mainnav">
                     <a href="../index.html"><img class="wiki-logo" src="../images/Wiki-wordmark.png"></a>
                     <ul id="nav_id" class="nav">
-                        <li>
-                            <a href="#">人物</a>
-                            <ul id="characters_ul" style="display: none;" >
-                            </ul>
-
-                        </li>
-                        <li>
-                            <a href="#">环境</a>
-                            <ul id="enviorments_ul" style="display: none;" >
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">战利品</a>
-                            <ul id="items_ul" style="display: none;" >
-                            </ul>
-                        </li>
+                            <li>
+                                <a>人物</a>
+                                <ul id="characters_ul" style="display: none;" >
+                                </ul>
+    
+                            </li>
+                            <li>
+                                <a>环境</a>
+                                <ul id="enviorments_ul" style="display: none;" >
+                                </ul>
+                            </li>
+                            <li>
+                                <a>战利品</a>
+                                <ul id="items_ul" style="display: none;" >
+                                </ul>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -54,25 +54,34 @@
                             <tr>
                                 <th>图标</th>
                                 <th>名称</th>
-                                <th style="width: 60%;">描述</th>
-                                <th style="width: 88px;">解锁物品</th>
+                                <th>生命值</th>
+                                <th>伤害</th>
+                                <th>速度</th>
+                                <th>生命再生速度</th>
+                                <th>护甲</th>
                             </tr>
                             <tr>
-                                <td><figure><a><img src="../images/items/TougherTime.png"></a></figure></td>
-                                <td><a>学习过程</a></td>
-                                <td>死亡5次</td>
-                                <td><a href="#">更艰难的时间</a></td>
+                                <td><figure><a><img src="../images/monster/HermitCrab.png"></a></figure></td>
+                                <td>寄居蟹</td>
+                                <td>100<span>(+30/级)</span></td>
+                                <td>4<span>(+0.8/级)</span></td>
+                                <td>10米/秒</td>
+                                <td>0.6<span>(+0.12/级)</span>hp/s</td>
+                                <td>0</td>
                             </tr>
                             <tr>
-                                <td><figure><a><img src="../images/items/GestureOfTheDrowned.png"></a></figure></td>
-                                <td><a>学习过程</a></td>
-                                <td>已赶出地图边缘的方式杀死20只<a href="../monsters/Hermit_Crab.html">寄居蟹</a></td>
-                                <td><a href="#">溺死者的心意</a></td>
+                                <td><figure><a><img src="../images/monster/HermitCrab.png"></a></figure></td>
+                                <td>寄居蟹</td>
+                                <td>100<span>(+30/级)</span></td>
+                                <td>4<span>(+0.8/级)</span></td>
+                                <td>10米/秒</td>
+                                <td>0.6<span>(+0.12/级)</span>hp/s</td>
+                                <td>0</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <div style="margin-left: 2em;">
+
+                    
                     <h3 class="line">精英怪</h3>
                     <p>所有敌人都有机会作为精英变种产生。机会随着难度的增加而增加。当前有五种不同的精英：</p>
                     <div class="original-ul">
@@ -85,6 +94,8 @@
                         </ul>
                     </div>
                     <p>所有精英的生命值都明显高于普通怪物。</p>
+                    <!-- <table style="width:100%; margin-top:1em; border:1px solid #999; font-size:90%; text-align:center;"><tbody><tr></tr><th style="white-space: nowrap; background-color:#3366CC; padding:0.2em 0.5em;"> <i><a href="/wiki/Risk_of_Rain_2" title="Risk of Rain 2"><font color="gold">Risk of Rain 2</font></a></i></th><tr></tr><td style="padding:0.2em 0.5em;"> <a href="../challenges/challenges.html" title="挑战">挑战</a> · <a href="/wiki/Characters_(RoR2)" title="Characters (RoR2)" class="mw-redirect">Characters</a> · <a href="/wiki/Enemies_%26_Bosses_(Risk_of_Rain_2)" title="Enemies &amp; Bosses (Risk of Rain 2)" class="mw-redirect">Enemies &amp; Bosses</a> · <strong class="selflink">Equipment</strong> · <a href="/wiki/Item_(Risk_of_Rain_2)" title="Item (Risk of Rain 2)">Items</a></td></tbody></table> -->
+                
                 </div>
             </div>
             <div class="wikiaTopAds"></div>
@@ -107,5 +118,18 @@
     </body>
 
     <script text="text/javascript" src="../js/wikibasement.js"></script>
+    <script text="text/javascript">
+        $(document).ready(function(){
+        header();
+        hover();
+        const cate =[
+            ["../challenges/challenges.html","挑战"],
+            ["../charactor/charactor_.html","人物"],
+            ["","敌人&首领"],
+            ["../items/item_.html","物品"],
+        ]
+        bottomTable(cate);
+    })	
+    </script>
 
 </html>

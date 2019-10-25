@@ -21,18 +21,18 @@
                     <a href="../index.html"><img class="wiki-logo" src="../images/Wiki-wordmark.png"></a>
                     <ul id="nav_id" class="nav">
                         <li>
-                            <a href="#">人物</a>
+                            <a>人物</a>
                             <ul id="characters_ul" style="display: none;" >
                             </ul>
 
                         </li>
                         <li>
-                            <a href="#">环境</a>
+                            <a>环境</a>
                             <ul id="enviorments_ul" style="display: none;" >
                             </ul>
                         </li>
                         <li>
-                            <a href="#">战利品</a>
+                            <a>战利品</a>
                             <ul id="items_ul" style="display: none;" >
                             </ul>
                         </li>
@@ -65,10 +65,40 @@
                                 <td><a href="#">更艰难的时间</a></td>
                             </tr>
                             <tr>
+                                <td><figure><a><img src="../images/items/17.png"></a></figure></td>
+                                <td><a>正在实验</a></td>
+                                <td>拾取<b>5</b>个不同种类的装备。</td>
+                                <td><a href="#">燃料电池</a></td>
+                            </tr>
+                            <tr>
+                                <td><figure><a><img src="../images/items/18.png"></a></figure></td>
+                                <td><a>屠杀</a></td>
+                                <td>击败<b>3000</b>名敌人。</td>
+                                <td><a href="#">浸剂</a></td>
+                            </tr>
+                            <tr>
+                                <td><figure><a><img src="../images/items/Regenrack.png"></a></figure></td>
+                                <td><a>理疗专家</a></td>
+                                <td>在未进行治疗的情况下，到达并完成第三个传送器事件。</td>
+                                <td><a href="#">回春之架</a></td>
+                            </tr>
+                            <tr>
                                 <td><figure><a><img src="../images/items/GestureOfTheDrowned.png"></a></figure></td>
-                                <td><a>学习过程</a></td>
+                                <td><a>恶魔与螃蟹</a></td>
                                 <td>已赶出地图边缘的方式杀死20只<a href="../monsters/Hermit_Crab.html">寄居蟹</a></td>
                                 <td><a href="#">溺死者的心意</a></td>
+                            </tr>
+                            <tr>
+                                <td><figure><a><img src="../images/Mercenary/True_Respite.png"></a></figure></td>
+                                <td><a>真正缓解</a></td>
+                                <td>在方尖石塔处抹除自己的存在......</td>
+                                <td><a href="#">雇佣兵</a></td>
+                            </tr>
+                            <tr>
+                                <td><figure><a><img src="../images/Mercenary/Merc_ult_2.PNG.png"></a></figure></td>
+                                <td><a>虚无缥缈</a></td>
+                                <td>作为雇佣兵，完成一场棱镜实验，同时保持生命值不低于100%</td>
+                                <td><a href="#">气刃斩</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -97,5 +127,18 @@
     </body>
 
     <script text="text/javascript" src="../js/wikibasement.js"></script>
+    <script text="text/javascript">
+            $(document).ready(function(){
+            header();
+            hover();
+            const cate =[
+                ["","挑战"],
+                ["../challenges/challenges.html","人物"],
+                ["../monsters/monsters_.html","敌人&首领"],
+                ["../items/item_.html","物品"],
+            ]
+            bottomTable(cate);
+        })	
+    </script>
 
 </html>
